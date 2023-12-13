@@ -14,12 +14,32 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6A324878-E6F
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aula01", "Aula01", "{ECC290C2-1CAE-457B-A8BB-8F6E14A0BB54}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula01", "..\src\Aula01\Aula01.csproj", "{93F7A1FA-6ADA-45C6-A6C4-1682BF7C816F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula01.Minimal.Api", "Aula01.Minimal.Api\Aula01.Minimal.Api.csproj", "{987EE5B7-D088-4D95-AB25-AFD9307BF6F3}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93F7A1FA-6ADA-45C6-A6C4-1682BF7C816F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93F7A1FA-6ADA-45C6-A6C4-1682BF7C816F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93F7A1FA-6ADA-45C6-A6C4-1682BF7C816F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93F7A1FA-6ADA-45C6-A6C4-1682BF7C816F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{987EE5B7-D088-4D95-AB25-AFD9307BF6F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{987EE5B7-D088-4D95-AB25-AFD9307BF6F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{987EE5B7-D088-4D95-AB25-AFD9307BF6F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{987EE5B7-D088-4D95-AB25-AFD9307BF6F3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{ECC290C2-1CAE-457B-A8BB-8F6E14A0BB54} = {6A324878-E6FC-4CC6-893F-B0506E393F23}
+		{93F7A1FA-6ADA-45C6-A6C4-1682BF7C816F} = {ECC290C2-1CAE-457B-A8BB-8F6E14A0BB54}
+		{987EE5B7-D088-4D95-AB25-AFD9307BF6F3} = {ECC290C2-1CAE-457B-A8BB-8F6E14A0BB54}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E4D39630-B0FC-4643-8F32-06C011F242AE}
