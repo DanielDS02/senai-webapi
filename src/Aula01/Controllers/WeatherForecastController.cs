@@ -12,22 +12,32 @@ namespace Aula01.Controllers
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
+        public List<WeatherForecast> ListaDeTemperaturas { get; set; }
 
         public WeatherForecastController(ILogger<WeatherForecastController> logger)
         {
             _logger = logger;
-        }
-
-        [HttpGet(Name = "GetWeatherForecast")]
-        public IEnumerable<WeatherForecast> Get()
-        {
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+            ListaDeTemperaturas = Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
                 TemperatureC = Random.Shared.Next(-20, 55),
                 Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-            })
-            .ToArray();
+            }).ToList();
         }
+
+        [HttpGet(Name = "GetWeatherForecast")]
+
+        public IEnumerable<WeatherForecast> Get()
+        {
+            return ListaDeTemperaturas.ToArray();
+        }
+
+        [HttpPost]
+        public Task<bool> AdicionarWeather(WeatherForecast weatherForecast)
+        {
+            ListaDeTemperaturas.Add(weatherForecast);
+            return Task.FromResult(true);
+        }
+
     }
 }
