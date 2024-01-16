@@ -11,8 +11,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{CC30F7C8-25A3-4356-8B00-447D3B0D7A46}"
 	ProjectSection(SolutionItems) = preProject
 		..\docs\aula3.md = ..\docs\aula3.md
-		..\docs\REST APIs com ASP .NET 01.pdf = ..\docs\REST APIs com ASP .NET 01.pdf
 		..\docs\aula4.md = ..\docs\aula4.md
+		..\docs\REST APIs com ASP .NET 01.pdf = ..\docs\REST APIs com ASP .NET 01.pdf
 		..\docs\REST APIs com ASP .NET 02.pdf = ..\docs\REST APIs com ASP .NET 02.pdf
 	EndProjectSection
 EndProject
@@ -20,13 +20,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6A324878-E6F
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aula01", "Aula01", "{ECC290C2-1CAE-457B-A8BB-8F6E14A0BB54}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aula01", "..\src\Aula01\Aula01.csproj", "{93F7A1FA-6ADA-45C6-A6C4-1682BF7C816F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aula01", "Aula01\Aula01.csproj", "{93F7A1FA-6ADA-45C6-A6C4-1682BF7C816F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aula01.Minimal.Api", "Aula01.Minimal.Api\Aula01.Minimal.Api.csproj", "{987EE5B7-D088-4D95-AB25-AFD9307BF6F3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicio", "Exercicio", "{C41FAA1E-468A-403C-9DE8-1940E1D5C103}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComoVcEsta", "ComoVcEsta\ComoVcEsta.csproj", "{4EDEE062-0442-4CC0-8223-2C966A65A613}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aula04", "Aula04", "{B5D092AD-F99C-4F52-9201-23599BE51B7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula04", "Aula04\Aula04.csproj", "{2790E5F4-D43F-4C9F-990B-872B8C4F90D8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -46,6 +50,10 @@ Global
 		{4EDEE062-0442-4CC0-8223-2C966A65A613}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4EDEE062-0442-4CC0-8223-2C966A65A613}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4EDEE062-0442-4CC0-8223-2C966A65A613}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2790E5F4-D43F-4C9F-990B-872B8C4F90D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2790E5F4-D43F-4C9F-990B-872B8C4F90D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2790E5F4-D43F-4C9F-990B-872B8C4F90D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2790E5F4-D43F-4C9F-990B-872B8C4F90D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +63,8 @@ Global
 		{93F7A1FA-6ADA-45C6-A6C4-1682BF7C816F} = {ECC290C2-1CAE-457B-A8BB-8F6E14A0BB54}
 		{987EE5B7-D088-4D95-AB25-AFD9307BF6F3} = {ECC290C2-1CAE-457B-A8BB-8F6E14A0BB54}
 		{4EDEE062-0442-4CC0-8223-2C966A65A613} = {C41FAA1E-468A-403C-9DE8-1940E1D5C103}
+		{B5D092AD-F99C-4F52-9201-23599BE51B7D} = {6A324878-E6FC-4CC6-893F-B0506E393F23}
+		{2790E5F4-D43F-4C9F-990B-872B8C4F90D8} = {B5D092AD-F99C-4F52-9201-23599BE51B7D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E4D39630-B0FC-4643-8F32-06C011F242AE}
