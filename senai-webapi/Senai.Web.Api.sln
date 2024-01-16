@@ -11,7 +11,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{CC30F7C8-25A3-4356-8B00-447D3B0D7A46}"
 	ProjectSection(SolutionItems) = preProject
 		..\docs\aula3.md = ..\docs\aula3.md
-		..\docs\Aula4.md = ..\docs\Aula4.md
+		..\docs\0aula4.md = ..\docs\0aula4.md
 		..\docs\REST APIs com ASP .NET 01.pdf = ..\docs\REST APIs com ASP .NET 01.pdf
 		..\docs\REST APIs com ASP .NET 02.pdf = ..\docs\REST APIs com ASP .NET 02.pdf
 	EndProjectSection
