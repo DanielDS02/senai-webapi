@@ -1,0 +1,6 @@
+@ComoVcEsta_HostAddress = http://localhost:5263
+
+GET {{ComoVcEsta_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
