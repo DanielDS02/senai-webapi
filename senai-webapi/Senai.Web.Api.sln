@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{CC30F7C8-25A3-4356-8B00-447D3B0D7A46}"
 	ProjectSection(SolutionItems) = preProject
+		aula3.md = aula3.md
+		Aula4.md = Aula4.md
 		..\docs\REST APIs com ASP .NET 01.pdf = ..\docs\REST APIs com ASP .NET 01.pdf
 		..\docs\REST APIs com ASP .NET 02.pdf = ..\docs\REST APIs com ASP .NET 02.pdf
 	EndProjectSection
@@ -24,7 +26,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aula01.Minimal.Api", "Aula0
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicio", "Exercicio", "{C41FAA1E-468A-403C-9DE8-1940E1D5C103}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComoVcEsta", "ComoVcEsta\ComoVcEsta.csproj", "{4EDEE062-0442-4CC0-8223-2C966A65A613}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComoVcEsta", "ComoVcEsta\ComoVcEsta.csproj", "{4EDEE062-0442-4CC0-8223-2C966A65A613}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
