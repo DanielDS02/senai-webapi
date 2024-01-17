@@ -18,5 +18,5 @@
 
  ## Próximos
 
-- [voltar](../README.md)
-- [proximo](docs/aula5.md)
+- [voltar](aula3.md)
+- [proximo](aula5.md)

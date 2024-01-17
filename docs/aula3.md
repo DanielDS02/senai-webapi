@@ -20,4 +20,4 @@
 ## Próximos
 
 - [voltar](../README.md)
-- [proximo](docs/aula4.md)
+- [proximo](aula4.md)
