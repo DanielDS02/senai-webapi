@@ -1,4 +1,5 @@
 ﻿using Aula04.Models;
+using FluentValidation;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,11 +10,17 @@ namespace Aula04.Controllers
     public class UsuariosController : ControllerBase
     {
         private readonly ValidadorDeUsuario _validadorDeUsuario;
-        private readonly ValidadorComFluent _validadorComFluent;
-        public UsuariosController()
+        private readonly IValidator<Usuario> _validadorComFluent;
+
+
+
+        public UsuariosController(
+            ValidadorDeUsuario validadorDeUsuario,
+            IValidator<Usuario> validator
+            )
         {
-            _validadorDeUsuario = new ValidadorDeUsuario();
-            _validadorComFluent = new ValidadorComFluent();
+            _validadorDeUsuario = validadorDeUsuario;
+            _validadorComFluent = validator;
         }
 
         [HttpPost]

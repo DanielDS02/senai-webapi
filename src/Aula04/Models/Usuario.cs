@@ -11,7 +11,9 @@ namespace Aula04.Models
         [StringLength(50)]
         [MinLength(7)]
         [EmailAddress]*/
+        //[StringLength(8, ErrorMessage = "Password must be at least 8 characters long.", MinimumLength = 8)]
         public string Email { get; set; }
+
         public string Nome { get; set; }
 
         public string Senha { get; set; }
@@ -25,8 +27,8 @@ namespace Aula04.Models
     {
         public ValidadorComFluent() 
         { 
-            RuleFor( usuario => usuario.ID ).NotEmpty().Length(5);
-            RuleFor( usuario => usuario.Email ).NotEmpty().Length(7).EmailAddress();
+            RuleFor( usuario => usuario.ID ).NotEmpty().MinimumLength(5);
+            RuleFor( usuario => usuario.Email ).NotEmpty().MinimumLength(7).EmailAddress();
         }
     }
 
