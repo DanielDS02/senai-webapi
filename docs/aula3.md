@@ -17,5 +17,5 @@
 - https://learn.microsoft.com/pt-br/aspnet/core/web-api/action-return-types?view=aspnetcore-8.0 
 - https://learn.microsoft.com/pt-br/aspnet/core/fundamentals/minimal-apis/overview?view=aspnetcore-8.0 
 
-[voltar](readme.md)
-[proximo](docs/aula4.md)
+- [voltar](../readme.md)
+- [proximo](docs/aula4.md)

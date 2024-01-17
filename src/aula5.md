@@ -10,5 +10,5 @@ https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=a
 https://learn.microsoft.com/pt-br/dotnet/core/extensions/logging?tabs=command-line 
 
 
-[voltar](readme.md)
-[proximo](docs/aula6.md)
+- [voltar](../readme.md)
+- [proximo](docs/aula6.md)

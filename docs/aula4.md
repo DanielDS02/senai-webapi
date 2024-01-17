@@ -17,5 +17,5 @@
 - https://learn.microsoft.com/pt-br/dotnet/core/extensions/dependency-injection
 
 
-[voltar](readme.md)
-[proximo](docs/aula5.md)
+- [voltar](../readme.md)
+- [proximo](docs/aula5.md)
