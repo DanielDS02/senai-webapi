@@ -1,6 +1,7 @@
 using Aula5.Models;
-using Microsoft.Extensions.Configuration;
+using Microsoft.OpenApi.Models;
 using Serilog;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,7 +30,13 @@ logger.Debug("Teste");
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Your API Name", Version = "v1" });
+    var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+    c.IncludeXmlComments(xmlPath);
+});
 
 builder.Services.Configure<Integracoes>(builder.Configuration.GetSection("Integracoes"));
 builder.Services.Configure<ConnectionStrings>(builder.Configuration.GetSection("ConnectionStrings"));
@@ -37,7 +44,7 @@ builder.Services.Configure<ConnectionStrings>(builder.Configuration.GetSection("
 builder.Services.AddLogging(configure =>
 {
     configure.AddConsole();
-	configure.AddSerilog();
+    configure.AddSerilog();
 });
 
 
@@ -54,21 +61,24 @@ app.Logger.LogCritical("Ola eu sou critical");
 try
 {
 
-	// Configure the HTTP request pipeline.
-	if (app.Environment.IsDevelopment())
-	{
-		app.UseSwagger();
-		app.UseSwaggerUI();
-	}
+    // Configure the HTTP request pipeline.
+    if (app.Environment.IsDevelopment())
+    {
+        app.UseSwagger();
+        app.UseSwaggerUI(c =>
+        {
+            c.SwaggerEndpoint("/swagger/v1/swagger.json", "Your API Name V1");
+        });
+    }
 
-	app.UseAuthorization();
+    app.UseAuthorization();
 
-	app.MapControllers();
+    app.MapControllers();
 
-	app.Run();
+    app.Run();
 }
-catch (Exception ex) 
+catch (Exception ex)
 {
-	app.Logger.LogCritical(ex, "Parou tudo");
+    app.Logger.LogCritical(ex, "Parou tudo");
 }
 

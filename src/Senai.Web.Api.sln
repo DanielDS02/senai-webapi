@@ -13,6 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{CC30F7C8-2
 		..\docs\aula3.md = ..\docs\aula3.md
 		..\docs\aula4.md = ..\docs\aula4.md
 		..\docs\aula5.md = ..\docs\aula5.md
+		..\docs\aula6.md = ..\docs\aula6.md
 		..\docs\REST APIs com ASP .NET 01.pdf = ..\docs\REST APIs com ASP .NET 01.pdf
 		..\docs\REST APIs com ASP .NET 02.pdf = ..\docs\REST APIs com ASP .NET 02.pdf
 	EndProjectSection
@@ -35,9 +36,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aula04", "Aula04\Aula04.csp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aula03", "Aula03", "{1F8346A9-294E-4121-93E4-5EF5DD283B0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula5", "Aula5\Aula5.csproj", "{30502FCD-65F3-461F-BA07-10C765D9C4A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aula5", "Aula5\Aula5.csproj", "{30502FCD-65F3-461F-BA07-10C765D9C4A2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aula05", "Aula05", "{9A40CC90-4608-474C-B9CB-3EE08EA7CE8B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aula06", "Aula06", "{B1EB39FF-B27D-435C-A408-4A7A304BF8C9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -79,6 +82,7 @@ Global
 		{1F8346A9-294E-4121-93E4-5EF5DD283B0E} = {C41FAA1E-468A-403C-9DE8-1940E1D5C103}
 		{30502FCD-65F3-461F-BA07-10C765D9C4A2} = {9A40CC90-4608-474C-B9CB-3EE08EA7CE8B}
 		{9A40CC90-4608-474C-B9CB-3EE08EA7CE8B} = {6A324878-E6FC-4CC6-893F-B0506E393F23}
+		{B1EB39FF-B27D-435C-A408-4A7A304BF8C9} = {6A324878-E6FC-4CC6-893F-B0506E393F23}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E4D39630-B0FC-4643-8F32-06C011F242AE}

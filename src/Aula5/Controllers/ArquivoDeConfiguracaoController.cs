@@ -1,5 +1,4 @@
 ﻿using Aula5.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 
@@ -23,7 +22,12 @@ namespace Aula5.Controllers
             Logger = logger;
         }
 
+        /// <summary>
+        /// Trazer a configuração de integração do arquivo de configuração
+        /// </summary>
+        /// <returns>A configuração de integracao</returns>
         [HttpGet("integracoes")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Integracoes))]
         public ActionResult GetIntegracao()
         {
             Logger.LogInformation($"{nameof(GetIntegracao)}");

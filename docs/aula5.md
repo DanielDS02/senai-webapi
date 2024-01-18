@@ -32,11 +32,37 @@ var integracoes = config.GetSection("Integracoes").Get<Integracoes>();
             Integracoes = integracoes.Value;
         }
 ```
+```
+ Logger.LogInformation("Ola eu sou informação");
+            Logger.LogInformation("Aplicação construida e sendo iniciada");
+            Logger.LogDebug("Ola eu sou debug");
+            Logger.LogTrace("Ola eu sou trace");
+            Logger.LogWarning("Ola eu sou warning");
+            Logger.LogError("Ola eu sou erro");
+            Logger.LogCritical("Ola eu sou critical");
+
+ ILogger<ArquivoDeConfiguracaoController> logger
+
+ builder.Services.AddLogging(configure =>
+{
+    configure.AddConsole();
+    configure.AddSerilog();
+});
+
+//Nuget
+    Serilog
+    Serilog.Extensions.Logging
+    Serilog.Settings.Configuration
+    Serilog.Sinks.File
+
+```
 
 ## Exercicio
 
 - 01 Continuar parte do que foi mostrado para configuração agora pegando
 a seção do banco de dados e passando via injeção de dependencia
+- 02 Adicionar configuração no aplicativo da pizzaria para indicar o caminho do banco de dados
+- 03 Adicionar log nas ações de negocio da pizzaria
 
  ## Próximos
 
