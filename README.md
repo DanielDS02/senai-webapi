@@ -6,6 +6,7 @@
 - [Aula 3](docs/aula3.md) 15/01/2024
 - [Aula 4](docs/aula4.md) 16/01/2024
 - [Aula 5](docs/aula5.md) 17/01/2024
+- [Aula 6](docs/aula6.md) 18/01/2024
 
 ## Links diversos
 

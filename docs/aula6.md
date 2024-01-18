@@ -7,6 +7,7 @@
 
 - https://learn.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-8.0
 - https://learn.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-7.0&viewFallbackFrom=aspnetcore-8.0&tabs=visual-studio
+- https://balta.io/blog/autenticacao-e-autorizacao-com-jwt-e-bearer-no-aspnet-7
 
 ## Exemplo código
 
@@ -135,9 +136,8 @@ public static string GenerateToken(User user, string secret)
 ```
 ## Exercicio
 
-- 01 
-- 02 
-- 03 
+- 01 Fazer a corrida de cachorro em API
+- 02 Adicionar documentação no aplicativo da pizzaria 
 
  ## Próximos
 
