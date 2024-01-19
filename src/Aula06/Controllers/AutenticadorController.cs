@@ -29,8 +29,14 @@ namespace Aula06.Controllers
 
             Secret = settings.Value.Secret;
         }
+        /// <summary>
+        /// Metodo para gerar token
+        /// </summary>
+        /// <param name="usuario">Usuario para autenticar</param>
+        /// <returns>Um token</returns>
         [HttpPost]
         [AllowAnonymous]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(string))]
         public async Task<string> Autenticar(Usuario usuario)
         {
             Usuario? usarioParaAutenticar = usuarios.Find(x => x.Email == usuario.Email);
