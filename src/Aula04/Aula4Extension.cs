@@ -9,8 +9,6 @@ namespace Aula04
         {
             services.AddScoped<ValidadorDeUsuario>();
             services.AddSingleton<IValidator<Usuario>, ValidadorComFluent>();
-
-
         }
     }
 }

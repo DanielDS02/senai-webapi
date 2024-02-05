@@ -1,0 +1,29 @@
+2024-01-17 21:45:37.896 -03:00 [INF] Ola eu sou informação
+2024-01-17 21:45:37.916 -03:00 [INF] Aplicação construida e sendo iniciada
+2024-01-17 21:45:37.925 -03:00 [WRN] Ola eu sou warning
+2024-01-17 21:45:37.926 -03:00 [ERR] Ola eu sou erro
+2024-01-17 21:45:37.928 -03:00 [FTL] Ola eu sou critical
+2024-01-17 21:45:38.096 -03:00 [INF] Now listening on: http://localhost:5022
+2024-01-17 21:45:38.098 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-17 21:45:38.099 -03:00 [INF] Hosting environment: Development
+2024-01-17 21:45:38.100 -03:00 [INF] Content root path: C:\george\senai-webapi\src\Aula5
+2024-01-17 21:45:42.517 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/swagger/index.html - null null
+2024-01-17 21:45:42.629 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/swagger/index.html - 200 null text/html;charset=utf-8 115.2584ms
+2024-01-17 21:45:42.630 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-17 21:45:42.630 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/_vs/browserLink - null null
+2024-01-17 21:45:42.631 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 1.4241ms
+2024-01-17 21:45:42.647 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/_vs/browserLink - 200 null text/javascript; charset=UTF-8 17.0446ms
+2024-01-17 21:45:42.687 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/swagger/v1/swagger.json - null null
+2024-01-17 21:45:42.711 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 23.5931ms
+2024-01-17 21:46:20.590 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5022/api/ArquivoDeConfiguracao/logs - null null
+2024-01-17 21:46:20.597 -03:00 [INF] Executing endpoint 'Aula5.Controllers.ArquivoDeConfiguracaoController.GetLogs (Aula5)'
+2024-01-17 21:46:20.606 -03:00 [INF] Route matched with {action = "GetLogs", controller = "ArquivoDeConfiguracao"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetLogs() on controller Aula5.Controllers.ArquivoDeConfiguracaoController (Aula5).
+2024-01-17 21:46:24.998 -03:00 [INF] Ola eu sou informação
+2024-01-17 21:46:24.999 -03:00 [INF] Aplicação construida e sendo iniciada
+2024-01-17 21:46:25.002 -03:00 [WRN] Ola eu sou warning
+2024-01-17 21:46:25.004 -03:00 [ERR] Ola eu sou erro
+2024-01-17 21:46:25.004 -03:00 [FTL] Ola eu sou critical
+2024-01-17 21:46:25.008 -03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.Extensions.Logging.Logger`1[[Aula5.Controllers.ArquivoDeConfiguracaoController, Aula5, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-17 21:46:25.013 -03:00 [INF] Executed action Aula5.Controllers.ArquivoDeConfiguracaoController.GetLogs (Aula5) in 4404.1335ms
+2024-01-17 21:46:25.013 -03:00 [INF] Executed endpoint 'Aula5.Controllers.ArquivoDeConfiguracaoController.GetLogs (Aula5)'
+2024-01-17 21:46:25.013 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5022/api/ArquivoDeConfiguracao/logs - 200 null application/json; charset=utf-8 4422.9887ms
